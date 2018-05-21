@@ -1,0 +1,13 @@
+[package]
+name = "instrument-wasm"
+version = "0.1.0"
+authors = ["Mark Simulacrum <mark.simulacrum@gmail.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+wasm-bindgen = { version = "0.2", features = ["spans", "std", "serde-serialize"] }
